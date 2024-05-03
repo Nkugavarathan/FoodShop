@@ -1,0 +1,157 @@
+:root{
+    --yellow:#ffc54d;
+    /*Variable name: value*/
+    --red:crimson;
+    --green:#53bf9d;
+    --white:whitesmoke;
+
+}
+
+
+body,h2{ /*h2 endu ithilaye kudutha keela #locheading,#menuheading la margin:0 endu kuduka theba illa*/
+    margin: 0%; /* default ah irukira margin edupadum
+                        (to reset predefined margin)*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url(a.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+header a{
+    text-decoration: none;
+    color:var(--yellow);
+    padding: 1.5em;
+}
+header{
+    display: flex;
+}
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+}
+nav {
+    flex: 2;
+    display: flex;
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color:var(--green);
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.25em;
+    height: 50vh;
+}
+.tagline1{
+    color: var(--red);
+    font-weight: bolder;
+    font-size: 1.5em;
+
+}
+.tagline2{
+    color:whitesmokes;
+}
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 1em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: var(--green);
+    color: var(--white);
+    border: 1px solid var(--green);
+}
+ .menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    background: linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
+    color: var(--white);
+}
+#locheading,#menuheading{
+    background-image:linear-gradient(to right,rgb(100,100,100),rgb(53,52,52)); 
+    color: var(--red);
+    font-size: 1.5em;
+    margin: 0%; /* eduthu par enna nadaku endu heading ku irukura default margin ah illama pannuram right click panni inspect la kela 
+                    computed endu irukum atha kuduthu pakka margin iruntha thrium*/
+   display: flex;
+   justify-content: center;
+   text-decoration: underline;
+}
+.menu .h{
+    color: var(--green);
+    text-decoration: underline;
+}
+.menu th{
+    color: var(--yellow);
+}
+table{
+    padding: 1em;
+    width: 100%;
+}   
+.menu tr{
+    display: flex;
+    justify-content: center ;
+    margin-top: .8em;
+
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self:right;
+}
+.lunch{
+    grid-row: span 2; /*eduthidu size ah kurachu par table ah lunch tabke ah */
+}
+.location{
+    background-image: linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
+    color: var(--white);
+    display: flex;
+    padding-left: 1em;
+}
+.location h2{
+    color: var(--green);
+    margin-bottom:.6em ;
+   
+}
+.location div{
+    flex: 1;
+    /* padding: 1em; */
+}
+.a{
+    text-decoration:underline ;
+}
+footer{
+    background-color: rgb(35,62,52);
+     text-align: center;
+    color: var(--white);
+}
+button a{
+    text-decoration: none;
+    color: var(--white);
+}
+header i,nav i{
+    margin-right: .5em;
+}
+::-webkit-scrollbar{
+    height: 20px;
+    width: 15px;
+}
+/*scrollbar eppadi seira endu par*/
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom,#ff850a,#ff3474);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-track{
+    background: #474747;
+}
